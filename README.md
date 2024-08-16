@@ -78,13 +78,13 @@ This documentation explains how to send data using AWS API Gateway, Lambda and D
 2. Create a new `POST` request.
 3. Enter the URL: `https://<api-id>.execute-api.<region>.amazonaws.com/dev/users` (It can also be copied from the API dashboard.)
 4. On the **Body** tab, select `raw` and `JSON` format.
-5. Enter a JSON data as follows:
+5. Enter a JSON data in this format:
     ```json
     {
         "userId": "FireFrost0665",
-        "CreatedDate": "1996-08-16"
+        "creationDate": "1996-08-16"
     }
     ```
 6. Click the **Send** button and check the status code.
 
-   It should give the status code `200` and the message `Data added to the DynamoDB Table`.
+It should give the status code `200` and the message `Data added to the DynamoDB Table`.
